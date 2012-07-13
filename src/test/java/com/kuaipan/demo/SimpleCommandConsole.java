@@ -154,7 +154,7 @@ public class SimpleCommandConsole {
 	}
 	
 	private void do_login() throws KuaipanIOException, KuaipanServerException, KuaipanAuthExpiredException {
-		String auth_url = api.requestToken();
+		String auth_url = api.requestToken(null);
 //		openBrowser(auth_url);
 		println(auth_url);
 		print("Visit this url and authorize the client, then press ENTER to continue.");
