@@ -47,7 +47,7 @@ public class AuthorizedAPIFactory {
 
 			
 			try {
-				String url = api.requestToken();
+				String url = api.requestToken(null);
 				System.out.println("到以下网址中使用你的快盘帐号授权，完成后按下ENTER键：\n" + url);					
 				
 				try {
